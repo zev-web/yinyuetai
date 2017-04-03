@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no" />
+<link rel="stylesheet" href="css/normaliz.css">
+<link rel="stylesheet" href="css/index.css">
+<title>音悦台</title>
+<script>
+setSize();
+window.addEventListener('resize',setSize,false);
+window.addEventListener('orientationonchange',setSize,false);
+function setSize(){
+	//获取html节点
+	var html = document.getElementsByTagName('html')[0];
+	//获取屏幕宽度
+	var width = html.getBoundingClientRect().width;
+	// 屏幕宽度 / 固定数值 = 基准值
+	html.style.fontSize = width / 16 + 'px';
+}
+</script>
+</head>
+<body>
+<header id="header">
+	<div class="header-content">
+		<h1 id="logo">
+			<a href="#">
+				<img src="img/logo.png">
+			</a>
+		</h1>
+		<a href="javascript:;" id="menuBtn" class="menu-btn-close"></a>
+		<nav id="btns">
+			<a href="#" class="search-btn">搜索</a>
+			<a href="#">登陆</a>
+			<a href="#">注册</a>
+		</nav>
+	</div>
+	<form class="search">
+		<input type="text" placeholder="请输入搜索内容">
+		<input type="submit" value="搜索">
+	</form>
+	<ul id="nav">
+		<li>
+            <a href="javascript:void(0);" class="" data-tab="index">首页</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" data-tab="mv" class="">MV</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" data-tab="pl" class="">悦单</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" data-tab="vchart" class="">V榜</a>
+        </li>
+	    <li><a href="http://zhongchou.yinyuetai.com/wap" class="">众筹</a></li>
+        <li>
+            <a href="http://www.yinyuetai.com/fanMass" data-tab="wapfan" class="">饭团</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" data-tab="program" class="">节目</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" data-tab="stage" class="">音悦stage</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" data-tab="apps/mobile" class="">APP下载</a>
+        </li>
+        <li>
+            <a href="http://news.yinyuetai.com/" target="_blank" class="">资讯</a>
+        </li>
+        <li>
+            <a href="http://i.yinyuetai.com" target="_blank" class="selected">我的家</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" data-tab="apps" class="">热门应用</a>
+        </li>
+	</ul>
+</header>
+<section class="wrap">
+	<div class="content">
+		<nav id="navScroll">
+			<ul id="navs">
+				<li class="active">
+		            <a href="javascript:void(0);" class="" data-tab="index">首页</a>
+		        </li>
+		        <li>
+		            <a href="javascript:void(0);" data-tab="mv" class="">MV</a>
+		        </li>
+		        <li>
+		            <a href="javascript:void(0);" data-tab="pl" class="">悦单</a>
+		        </li>
+		        <li>
+		            <a href="javascript:void(0);" data-tab="vchart" class="">V榜</a>
+		        </li>
+			    <li><a href="http://zhongchou.yinyuetai.com/wap" class="">众筹</a></li>
+		        <li>
+		            <a href="http://www.yinyuetai.com/fanMass" data-tab="wapfan" class="">饭团</a>
+		        </li>
+		        <li>
+		            <a href="javascript:void(0);" data-tab="program" class="">节目</a>
+		        </li><li>
+		            <a href="javascript:void(0);" data-tab="program" class="">节目</a>
+		        </li>
+		        <li>
+		            <a href="javascript:void(0);" data-tab="stage" class="">音悦stage</a>
+		        </li>
+		        <li>
+		            <a href="javascript:void(0);" data-tab="apps/mobile" class="">APP下载</a>
+		        </li>
+		        <li>
+		            <a href="http://news.yinyuetai.com/" target="_blank" class="">资讯</a>
+		        </li>
+		        <li>
+		            <a href="http://i.yinyuetai.com" target="_blank" class="selected">我的家</a>
+		        </li>
+		        <li>
+		            <a href="javascript:void(0);" data-tab="apps" class="">热门应用</a>
+		        </li>
+			</ul>
+		</nav>
+		<div id="picTab">
+			<ul id="picList">
+		    	<li>
+		        	<a href="#">
+		            	<img src="img/img1.jpg" />
+		            </a>
+		        </li>
+		        <li>
+		        	<a href="#">
+		            	<img src="img/img2.jpg" />
+		            </a>
+		        </li>
+		        <li>
+		        	<a href="#">
+		            	<img src="img/img3.jpg" />
+		            </a>
+		        </li>
+		        <li>
+		        	<a href="#">
+		            	<img src="img/img4.jpg" />
+		            </a>
+		        </li>
+
+		    </ul>
+		    <nav id="picNav">
+		    	<span class="active"></span>
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		    </nav>
+		</div>
+		<section class="tab">
+			<header class="tabHeader">
+				<h2>MV首播</h2>
+				<a href="#">更多</a>
+			</header>
+			<nav class="tabNav">
+				<a href="javascript:;" class="J_area cur" data-area="all">全部</a>
+				<a href="javascript:;" class="J_area" data-area="ml">内地</a>
+				<a href="javascript:;" class="J_area" data-area="ht">港台</a>
+				<a href="javascript:;" class="J_area" data-area="us">欧美</a>
+				<a href="javascript:;" class="J_area" data-area="kr">韩国</a>
+				<a href="javascript:;" class="J_area" data-area="jp">日本</a>
+				<span></span>
+			</nav>
+			<section class="tabList">
+				<ul class="tabNext">
+					loading
+				</ul>
+				<ul class="tabShow">
+					<li>
+						<a href="#">
+							<img src="img/img.jpg"/>
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/img.jpg"/>
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/img.jpg"/>
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/img.jpg"/>
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/img.jpg"/>
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/img.jpg"/>
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="tabNext">
+					loading
+				</ul>
+			</section>
+		</section>
+		<section class="tab">
+			<header class="tabHeader">
+				<h2>MV首播</h2>
+				<a href="#">更多</a>
+			</header>
+			<nav class="tabNav">
+				<a href="javascript:;" class="J_area cur" data-area="all">全部</a>
+				<a href="javascript:;" class="J_area" data-area="ml">内地</a>
+				<a href="javascript:;" class="J_area" data-area="ht">港台</a>
+				<a href="javascript:;" class="J_area" data-area="us">欧美</a>
+				<a href="javascript:;" class="J_area" data-area="kr">韩国</a>
+				<a href="javascript:;" class="J_area" data-area="jp">日本</a>
+				<span></span>
+			</nav>
+			<section class="tabList">
+				<ul class="tabNext">
+					loading
+				</ul>
+				<ul class="tabShow">
+					<li>
+						<a href="#">
+							<img src="img/img.jpg"/>
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/img.jpg"/>
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/img.jpg"/>
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/img.jpg"/>
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/img.jpg"/>
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/img.jpg"/>
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="tabNext">
+					loading
+				</ul>
+			</section>
+		</section>
+		<section class="tab">
+			<header class="tabHeader">
+				<h2>MV首播</h2>
+				<a href="#">更多</a>
+			</header>
+			<nav class="tabNav">
+				<a href="javascript:;" class="J_area cur" data-area="all">全部</a>
+				<a href="javascript:;" class="J_area" data-area="ml">内地</a>
+				<a href="javascript:;" class="J_area" data-area="ht">港台</a>
+				<a href="javascript:;" class="J_area" data-area="us">欧美</a>
+				<a href="javascript:;" class="J_area" data-area="kr">韩国</a>
+				<a href="javascript:;" class="J_area" data-area="jp">日本</a>
+				<span></span>
+			</nav>
+			<section class="tabList">
+				<ul class="tabNext">
+					loading
+				</ul>
+				<ul class="tabShow">
+					<li>
+						<a href="#">
+							<img src="img/img.jpg"/>
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/img.jpg"/>
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/img.jpg"/>
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/img.jpg"/>
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/img.jpg"/>
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/img.jpg"/>
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="tabNext">
+					loading
+				</ul>
+			</section>
+		</section>
+	</div>
+</section>
+<div id="scrollBar"></div>
+<script src="js/transform.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
